@@ -62,56 +62,63 @@ h3 {
 a {
   color: var(--link-color);
   text-decoration: none;
-}
 
-a:hover {
-  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 ul {
   margin: calc(var(--base-unit) * 2) 20px;
-}
 
-ul li {
-  list-style: disc;
+  li {
+    list-style: disc;
+  }
 }
 
 header {
   max-width: 410px;
-}
 
-header a {
-  color: inherit;
-}
+  a {
+    color: inherit;
 
-header a:hover {
-  text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .social {
   margin: calc(var(--base-unit) * 2) 0;
-}
 
-.social a {
-  display: inline-block;
-  margin-right: var(--base-unit);
-}
+  a {
+    display: inline-block;
+    margin-right: var(--base-unit);
+  }
 
-.social .social__icon {
-  width: 28px;
-  height: 28px;
-  fill: var(--body-color);
-}
+  &__icon {
+    width: 28px;
+    height: 28px;
+    fill: var(--body-color);
 
-.social .social__icon--twitter:hover {
-  fill: #55acee;
-}
+    &--twitter {
+      &:hover {
+        fill: #55acee;
+      }
+    }
 
-.social .social__icon--github:hover {
-  fill: #000;
-}
-.social .social__icon--linkedin:hover {
-  fill: #0077B5;
+    &--github {
+      &:hover {
+        fill: #000;
+      }
+    }
+
+    &--linkedin {
+      &:hover {
+        fill: #0077B5;
+      }
+    }
+  }
 }
 
 .lead {

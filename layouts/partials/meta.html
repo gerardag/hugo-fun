@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="{{ .Title }}">
+{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ .Title }}">
+{{ with .Site.Params.description }}<meta name="twitter:description" content="{{ . }}">{{ end }}
+{{ with .Site.Params.twitterCreator }}<meta name="twitter:creator" content="{{ . }}">{{ end }}
+<meta name="twitter:url" content="https://gerard.fun">
+<meta property="og:title" content="{{ .Title }}">
+{{ with .Site.Params.description }}<meta name="og:description" content="{{ . }}">{{ end }}
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#222"/>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+  <head>
+    <link rel="preconnect" href="https://stats.gerard.fun">
+    {{ partial "meta.html" . }}
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <title>{{ if eq .IsHome false }}{{ .Title }} &mdash; {{ end }}{{ .Site.Title }}</title>
+    <link rel="manifest" href="/manifest.json">
+    {{ $options := (dict "targetPath" "main.css" "outputStyle" "compressed") }}
+    {{ $styles := resources.Get "styles/index.scss" | toCSS $options }}
+    <style media="screen">
+    {{ $styles.Content | safeCSS }}
+    </style>
+  </head>
+  <body>

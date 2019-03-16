@@ -1,10 +1,12 @@
-name = "Fun"
+name = "Blank"
 license = "MIT"
-licenseLink = "https://github.com/gerardag/hugo-fun/blob/master/LICENSE.md"
-description = "Clean and simple Hugo Theme by Gerard Albanell"
-homepage = "https://github.com/gerardag/hugo-fun/"
-tags = ["clean", "simple", "responsive", "minimal", "white"]
+licenselink = "https://github.com/vimux/blank/blob/master/LICENSE.md"
+description = "Starter Hugo theme for developers."
+homepage = "https://github.com/vimux/blank/"
+tags = ["blog", "plain", "blank", "starter"]
+features = ["blog"]
+min_version = 0.19
 
 [author]
-    name = "Gerard Albanell"
-    homepage = "https://gerard.fun"
+  name = "Vimux"
+  homepage = "https://github.com/vimux"
