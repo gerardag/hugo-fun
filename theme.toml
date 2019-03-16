@@ -1,0 +1,10 @@
+name = "Fun"
+license = "MIT"
+licenseLink = "https://github.com/gerardag/hugo-fun/blob/master/LICENSE.md"
+description = "Clean and simple Hugo Theme by Gerard Albanell"
+homepage = "https://github.com/gerardag/hugo-fun/"
+tags = ["clean", "simple", "responsive", "minimal", "white"]
+
+[author]
+    name = "Gerard Albanell"
+    homepage = "https://gerard.fun"
