@@ -3,7 +3,7 @@ license = "MIT"
 licenselink = "https://github.com/gerardag/fun/blob/master/LICENSE.md"
 description = "Clean and simple Hugo Theme."
 homepage = "https://github.com/gerardag/fun/"
-tags = ["clean", "simple", "minimalist", "starter"]
+tags = ["clean", "simple", "minimalist", "starter", "white"]
 features = ["personal site"]
 min_version = 0.52
 

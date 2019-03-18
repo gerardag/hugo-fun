@@ -10,7 +10,7 @@ Clean and simple [Hugo](https://gohugo.io) starter. Perfect for personals sites,
 git submodule add https://github.com/gerardag/hugo-fun
 ```
 
-2. Configure your `config.toml` to use that theme. Below, you can see 1 minimal configuration:
+2. Configure your `config.toml` to use that theme. Below, you can see an example of configuration with minimal setup:
 
 ```
 ...
