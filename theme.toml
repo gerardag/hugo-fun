@@ -1,7 +1,7 @@
 name = "Fun"
 license = "MIT"
 licenselink = "https://github.com/gerardag/fun/blob/master/LICENSE.md"
-description = "Starter Hugo theme for developers."
+description = "Clean and simple Hugo Theme."
 homepage = "https://github.com/gerardag/fun/"
 tags = ["clean", "simple", "minimalist", "starter"]
 features = ["personal site"]

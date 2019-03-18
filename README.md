@@ -7,7 +7,7 @@ Clean and simple [Hugo](https://gohugo.io) starter. Perfect for personals sites,
 1. Add the repository into your Hugo Project as a submodule
 
 ```
-git submodule add https://github.com/gerardag/
+git submodule add https://github.com/gerardag/hugo-fun
 ```
 
 2. Configure your `config.toml` to use that theme. Below, you can see 1 minimal configuration:
