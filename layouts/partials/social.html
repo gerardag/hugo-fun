@@ -1,0 +1,7 @@
+{{ if eq . "twitter"}}
+    {{ partial "social/twitter.html" }}
+{{ else if eq . "github"}}
+    {{ partial "social/github.html" }}
+{{ else if eq . "linkedin"}}
+    {{ partial "social/linkedin.html" }}
+{{ end }}
