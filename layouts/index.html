@@ -22,5 +22,13 @@
       </h3>
       <p>{{ .Title }}</p>
     {{ end }}
+    {{ range .Page.Site.Menus.projects }}
+      <h3>
+        {{ .Pre }}
+        {{ .Name }}
+        {{ .Post }}
+      </h3>
+      <p>{{ .Title }}</p>
+    {{ end }}
 	</main>
 {{ partial "footer.html" . }}
