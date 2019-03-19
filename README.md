@@ -20,6 +20,7 @@ theme = "hugo-fun"
   author = "John Appleseed"
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   twitterCreator = "@johnappleseed"
+  colorMode = "light/dark"
 
   # Home Header
   [params.home]
