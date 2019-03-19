@@ -14,7 +14,7 @@
     <hr>
   </header>
 	<main>
-    {{ range .Page.Site.Menus.main }}
+    {{ range .Site.Menus.main }}
       <h3>
         {{ .Pre }}
         {{ .Name }}
@@ -22,15 +22,15 @@
       </h3>
       <p>{{ .Title }}</p>
     {{ end }}
-    {{ if isset .Page.Site.Menus "projects" }}
+    {{ if isset .Site.Params.Home "projects" }}
       <hr>
-      {{ range .Page.Site.Menus.projects }}
+      {{ range .Site.Params.Home.Projects }}
         <h3>
-          {{ .Pre }}
-          {{ .Name }}
-          {{ .Post }}
+          {{ .pre | safeHTML }}
+          {{ .name }}
+          {{ .post | safeHTML }}
         </h3>
-        <p>{{ .Title }}</p>
+        <p>{{ .title }}</p>
       {{ end }}
     {{ end }}
 	</main>
