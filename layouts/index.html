@@ -22,13 +22,16 @@
       </h3>
       <p>{{ .Title }}</p>
     {{ end }}
-    {{ range .Page.Site.Menus.projects }}
-      <h3>
-        {{ .Pre }}
-        {{ .Name }}
-        {{ .Post }}
-      </h3>
-      <p>{{ .Title }}</p>
+    {{ if isset .Page.Site.Menus "projects" }}
+      <hr>
+      {{ range .Page.Site.Menus.projects }}
+        <h3>
+          {{ .Pre }}
+          {{ .Name }}
+          {{ .Post }}
+        </h3>
+        <p>{{ .Title }}</p>
+      {{ end }}
     {{ end }}
 	</main>
 {{ partial "footer.html" . }}
