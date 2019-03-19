@@ -1,13 +1,16 @@
 // Reset
 @import 'reset';
 
-// Layout
+// Default light theme vars.
 :root {
   --body-padding: 64px;
+  --bg-color: #fff;
   --border-color: #aaa;
   --body-color: #222;
+  --body-hover-color: #aaa;
   --heading-color: #222;
   --link-color: #0000ee;
+  --link-hover-color: #3030f7;
   --white-color: #fff;
   --base-unit: 8px;
   --h00: 40px;
@@ -16,6 +19,18 @@
   --small: 14px;
   --regular-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+// Dark theme vars.
+.dark {
+  --bg-color: #222;
+  --border-color: #aaa;
+  --body-color: #fff;
+  --heading-color: #fff;
+  --link-color: #aaa;
+  --link-hover-color: #fff;
+
+}
+
 @media screen and (max-width: 768px) {
   :root {
     --body-padding: 32px;
@@ -37,6 +52,7 @@ body {
   font-family: var(--regular-font);
   font-size: var(--regular);
   color: var(--body-color);
+  background-color: var(--bg-color);
   line-height: 1.5;
 }
 
@@ -105,22 +121,8 @@ header {
     height: 28px;
     fill: var(--body-color);
 
-    &--twitter {
-      &:hover {
-        fill: #55acee;
-      }
-    }
-
-    &--github {
-      &:hover {
-        fill: #000;
-      }
-    }
-
-    &--linkedin {
-      &:hover {
-        fill: #0077B5;
-      }
+    &:hover {
+      fill: var(--body-hover-color)
     }
   }
 }
