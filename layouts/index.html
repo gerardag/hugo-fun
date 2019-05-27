@@ -23,17 +23,6 @@
       </h3>
       <p>{{ .Title }}</p>
     {{ end }}
-    {{ if isset .Site.Params.Home "projects" }}
-      <hr>
-      {{ range .Site.Params.Home.Projects }}
-        <h3>
-          {{ .pre | safeHTML }}
-          {{ .name }}
-          {{ .post | safeHTML }}
-        </h3>
-        <p>{{ .title }}</p>
-      {{ end }}
-    {{ end }}
 	</main>
 {{ partial "footer.html" . }}
 </div>
