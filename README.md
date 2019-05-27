@@ -2,15 +2,38 @@
 
 Clean and simple [Hugo](https://gohugo.io) starter. Perfect for personals sites, but use it as you want.
 
-## Quickstart
+## Installation
 
-1. Add the repository into your Hugo Project as a submodule
+### Install the theme
+
+If your site is also under git version control, the easiest way is to install the theme as a submodule. Inside the themes folder, run the following command:
 
 ```
 git submodule add https://github.com/gerardag/hugo-fun
 ```
 
-2. Configure your `config.toml` to use that theme. Below, you can see an example of configuration with minimal setup:
+Alternatively, you can clone the theme into your project:
+
+```
+git clone https://github.com/gerardag/hugo-fun
+
+```
+
+### Configure the theme
+
+Inside your `config.toml` add the following line to tell Hugo to use the theme:
+
+```
+theme = "hugo-fun"
+```
+
+Also, you can see the minimiun reommended configuration below:
+
+```
+
+### Update the theme
+If you have installed the theme as a git submodule, you can update the theme by issuing the following command inside your project folder.
+
 
 ```
 ...
@@ -41,10 +64,25 @@ theme = "hugo-fun"
     url = "https://www.linkedin.com/in/johnappleseed"
 ...
 
+```
+
+### Update the theme
+
+If you have installed the theme as git submodule, you can update the theme with the following command inside the theme folder:
+
+```
+git submodule update --remote --rebase
 
 ```
 
-3. Test your site locally typing `hugo serve` in your terminal.
+If you have cloned the theme, inside the them folder, you need to run:
+
+```
+git pull
+```
+
+## Configuration
+
 
 
 
