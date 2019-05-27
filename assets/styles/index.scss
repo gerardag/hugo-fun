@@ -2,14 +2,15 @@
 @import 'reset';
 
 // Default light theme vars.
+// #cb7c7a || #cad7ca
 :root {
   --body-padding: 64px;
   --bg-color: #fff;
   --border-color: #aaa;
-  --body-color: #222;
+  --body-color: #111;
   --body-hover-color: #aaa;
   --heading-color: #222;
-  --link-color: #0000ee;
+  --link-color: #111;
   --link-hover-color: #3030f7;
   --white-color: #fff;
   --base-unit: 8px;
@@ -52,8 +53,15 @@ body {
   font-family: var(--regular-font);
   font-size: var(--regular);
   color: var(--body-color);
-  background-color: var(--bg-color);
+  mix-blend-mode: color-burn;
+  background: linear-gradient(90deg, #f1dddf 40%, var(--white-color) 40%);
   line-height: 1.5;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
 }
 
 strong {
