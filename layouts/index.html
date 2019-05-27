@@ -1,28 +1,28 @@
-<div class="wrapper">
 {{ partial "header.html" . }}
-  <header>
-    <h1>{{ .Site.Params.Home.title | safeHTML }}</h1>
-    <p class="lead">{{ .Site.Params.Home.lead | safeHTML }}</p>
-    {{ if isset .Site.Params "social" }}
-      <div class="social">
-        {{ range .Site.Params.Social }}
-          <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .type }}">
-            {{ partial "social.html" .type }}
-          </a>
-        {{ end }}
-      </div>
-    {{ end }}
-    <hr>
-  </header>
-	<main>
-    {{ range .Site.Menus.main }}
-      <h3>
-        {{ .Pre }}
-        {{ .Name }}
-        {{ .Post }}
-      </h3>
-      <p>{{ .Title }}</p>
-    {{ end }}
-	</main>
-{{ partial "footer.html" . }}
+  <div class="wrapper">
+    <header>
+      <h1>{{ .Site.Params.Home.title | safeHTML }}</h1>
+      <p class="lead">{{ .Site.Params.Home.lead | safeHTML }}</p>
+      {{ if isset .Site.Params "social" }}
+        <div class="social">
+          {{ range .Site.Params.Social }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .type }}">
+              {{ partial "social.html" .type }}
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+      <hr>
+    </header>
+    <main>
+      {{ range .Site.Menus.main }}
+        <h3>
+          {{ .Pre }}
+          {{ .Name }}
+          {{ .Post }}
+        </h3>
+        <p>{{ .Title }}</p>
+      {{ end }}
+    </main>
+  {{ partial "footer.html" . }}
 </div>
