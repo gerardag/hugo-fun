@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}" class="{{ .Site.Params.colorMode }}">
   <head>
-    <link rel="preconnect" href="https://stats.gerard.fun">
     {{ partial "meta.html" . }}
     <link rel="shortcut icon" href="/images/favicon.ico">
     <title>{{ if eq .IsHome false }}{{ .Title }} &mdash; {{ end }}{{ .Site.Title }}</title>
