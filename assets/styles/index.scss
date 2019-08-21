@@ -7,7 +7,7 @@
   --body-padding: 64px;
   --bg-color: #fff;
   --border-color: #aaa;
-  --body-color: green;
+  --body-color: blue;
   --body-hover-color: #aaa;
   --heading-color: #222;
   --link-color: #111;
@@ -53,7 +53,6 @@ body {
   font-family: var(--regular-font);
   font-size: var(--regular);
   color: var(--body-color);
-  mix-blend-mode: normal;
   line-height: 1.5;
 }
 
